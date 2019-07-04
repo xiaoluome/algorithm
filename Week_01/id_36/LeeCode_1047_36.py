@@ -5,6 +5,8 @@
 #
 # 思路 : 判断栈顶的元素和即将加入的元素是否相等，相等则弹出栈顶，否则压入栈顶
 #
+
+
 class Solution:
     def removeDuplicates(self, S: str) -> str:
         stack = ['-']
@@ -13,6 +15,5 @@ class Solution:
                 stack.pop()
             else:
                 stack.append(s)
-        
-        return ''.join(stack[1:])
 
+        return ''.join(stack[1:])
